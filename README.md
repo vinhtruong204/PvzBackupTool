@@ -4,7 +4,7 @@ A Windows desktop utility for copying an Android app backup from a MIUI/HyperOS 
 
 The default package is the original Plants vs. Zombies Android package (`com.ea.game.pvzfree_row`), but you can select any installed third-party app.
 
-![PvzBackupTool main window](docs/screenshots/main-window.jpg)
+![PvzBackupTool main window](docs/screenshots/main-window.png)
 
 ## Requirements
 
