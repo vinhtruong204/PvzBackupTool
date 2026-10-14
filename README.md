@@ -8,7 +8,7 @@ The default package is the original Plants vs. Zombies Android package (`com.ea.
 
 - Windows 10 or later
 - [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) to build or run from source
-- Android Platform Tools, including `adb.exe`
+- [Android SDK Platform Tools](https://developer.android.com/tools/releases/platform-tools), including `adb.exe`
 - A MIUI or HyperOS Android phone that provides the local backup app
 - USB debugging enabled on the phone
 
@@ -17,6 +17,12 @@ The default package is the original Plants vs. Zombies Android package (`com.ea.
 1. On the phone, enable **Developer options**: tap **MIUI version** or **OS version** seven times in *Settings → About phone*.
 2. In *Settings → Additional settings → Developer options*, enable **USB debugging**.
 3. Connect the phone by USB, unlock it, and accept the **Allow USB debugging** prompt.
+
+## Get ADB (Android Platform Tools)
+
+1. Download the Windows Platform Tools ZIP from the [official Android download page](https://developer.android.com/tools/releases/platform-tools).
+2. Extract it somewhere convenient, for example `C:\Android\platform-tools`.
+3. In this tool, use **Browse...** beside `adb.exe` and choose the extracted `adb.exe` file.
 
 ## Run it
 
@@ -58,6 +64,11 @@ The app remembers these three settings under your local application-data folder.
 - It requires exactly one connected, authorized Android device.
 - If the phone does not expose the MIUI backup activity or uses a different backup format, backup and restore will not work.
 - Extracted data is for inspection/convenience. Use the original MIUI `.zip` for restoring.
+- Backup archives may contain private app data. Store them securely and never commit or upload them unintentionally.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
 
 ## Build a release executable
 

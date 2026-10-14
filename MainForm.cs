@@ -136,9 +136,11 @@ public sealed class MainForm : Form
 
     void LoadSettings()
     {
-        _adbBox.Text = @"D:\Downloads\platform-tools-latest-windows\platform-tools\adb.exe";
+        // Keep the first-run values portable. Users select their own adb.exe and
+        // destination folder; both choices are saved after the first operation.
+        _adbBox.Text = "";
         _pkgBox.Text = "com.ea.game.pvzfree_row";
-        _destBox.Text = @"D:\pvz-backup";
+        _destBox.Text = "";
 
         try
         {
